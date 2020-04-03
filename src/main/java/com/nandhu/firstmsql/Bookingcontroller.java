@@ -31,5 +31,9 @@ public class Bookingcontroller {
         bookingRepository.deleteById(id);
         return bookingRepository.findAll();
     }
+    @RequestMapping("https://spring-a.herokuapp.com/")
+    public String SayHai(){
+        return "hai";
+    }
 
 }
